@@ -1,66 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Intentionally broken/mismatched items to trigger five distinct errors -->
-<Hotel>  <!-- ERROR #1: Root element should be <Hotels> -->
-  <Hotel Rating="4.5">
-    <!-- ERROR #2 will be on a different hotel: missing required Address@Country -->
-    <Name>The Westin Tempe</Name>
-    <Name>Duplicate Name</Name> <!-- ERROR #5: two <Name> elements -->
-    <Phone>+1-480-968-8885</Phone>
-    <Phone>+1-480-968-0000</Phone>
-    <Address NearestAirport="PHX">
-      <!-- missing required attribute Country on another hotel; here we keep it to vary -->
+<!-- Intentionally broken items to trigger five distinct errors -->
+<Hotel>  <!-- (1) Wrong root -->
+  <Hotel>
+    <Name>Westin</Name>
+    <Name>Duplicate Name</Name> <!-- (5) Two names -->
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address Country="USA" NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E 7th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
 
   <Hotel>
     <Name>Tempe Mission Palms</Name>
-    <!-- ERROR #3: remove required Phone (minOccurs=1) -->
+    <!-- (3) Missing Phone entirely -->
     <Address Country="USA">
       <Number>60</Number>
       <Street>E 5th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-      <NearestAirport>PHX</NearestAirport>
     </Address>
-    <Rating>4.4</Rating>
   </Hotel>
 
-  <Hotel Rating="4.2">
+  <Hotel>
     <Name>Hyatt Place Tempe</Name>
-    <Phone>+1-480-207-1578</Phone>
+    <Phone>480-207-1578</Phone>
     <Address NearestAirport="PHX">
-      <!-- ERROR #2: missing required attribute Country -->
+      <!-- (2) Missing required Country attribute on Address -->
       <Number>601</Number>
       <Street>E 6th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
 
   <Hotel>
-    <Name>Graduate Tempe</Name>
-    <Phone>+1-480-967-9431</Phone>
-    <Address Country="USA">
-      <Number>225</Number>
-      <Street>E Apache Blvd</Street>
-      <City>Tempe</City>
-      <State>AZ</State>
-      <Zip>85281</Zip>
-    </Address>
-    <Rating>4.0</Rating>
-  </Hotel>
-
-  <Hotel Rating="4.1">
     <Name>Courtyard by Marriott Tempe</Name>
-    <Phone>+1-480-966-2800</Phone>
-    <!-- ERROR #4: malformed closing tag for Address -->
+    <Phone>480-966-2800</Phone>
+    <!-- (4) Broken closing tag for Address -->
     <Address Country="USA" NearestAirport="PHX">
       <Number>601</Number>
       <Street>S Ash Ave</Street>

@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
-  <Hotel Rating="4.5">
+  <!-- Westin example MUST be present exactly like the prompt -->
+  <Hotel>
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address Country="USA" NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+    <Rating>4.2</Rating>
+  </Hotel>
+
+  <Hotel>
     <Name>The Westin Tempe</Name>
-    <Phone>+1-480-968-8885</Phone>
-    <Phone>+1-480-968-0000</Phone>
+    <Phone>480-968-8885</Phone>
+    <Phone>480-968-0000</Phone>
     <Address Country="USA" NearestAirport="PHX">
       <Number>11</Number>
       <Street>E 7th St</Street>
@@ -11,25 +26,25 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.5</Rating>
   </Hotel>
 
   <Hotel>
     <Name>Tempe Mission Palms</Name>
-    <Phone>+1-480-894-1400</Phone>
+    <Phone>480-894-1400</Phone>
     <Address Country="USA">
       <Number>60</Number>
       <Street>E 5th St</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-      <NearestAirport>PHX</NearestAirport>
     </Address>
     <Rating>4.4</Rating>
   </Hotel>
 
-  <Hotel Rating="4.2">
+  <Hotel>
     <Name>Hyatt Place Tempe</Name>
-    <Phone>+1-480-207-1578</Phone>
+    <Phone>480-207-1578</Phone>
     <Address Country="USA" NearestAirport="PHX">
       <Number>601</Number>
       <Street>E 6th St</Street>
@@ -37,11 +52,12 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.2</Rating>
   </Hotel>
 
   <Hotel>
     <Name>Graduate Tempe</Name>
-    <Phone>+1-480-967-9431</Phone>
+    <Phone>480-967-9431</Phone>
     <Address Country="USA">
       <Number>225</Number>
       <Street>E Apache Blvd</Street>
@@ -52,9 +68,9 @@
     <Rating>4.0</Rating>
   </Hotel>
 
-  <Hotel Rating="4.1">
+  <Hotel>
     <Name>Courtyard by Marriott Tempe</Name>
-    <Phone>+1-480-966-2800</Phone>
+    <Phone>480-966-2800</Phone>
     <Address Country="USA" NearestAirport="PHX">
       <Number>601</Number>
       <Street>S Ash Ave</Street>
@@ -62,26 +78,27 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
+    <Rating>4.1</Rating>
   </Hotel>
 
   <Hotel>
     <Name>AC Hotel Phoenix Tempe</Name>
-    <Phone>+1-480-642-6140</Phone>
+    <Phone>480-642-6140</Phone>
+    <Phone>877-829-2429</Phone>
     <Address Country="USA">
       <Number>100</Number>
       <Street>E Rio Salado Pkwy</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-      <NearestAirport>PHX</NearestAirport>
     </Address>
     <Rating>4.3</Rating>
   </Hotel>
 
-  <Hotel Rating="4.0">
+  <Hotel>
     <Name>Hilton Garden Inn Tempe</Name>
-    <Phone>+1-480-219-5320</Phone>
-    <Address Country="USA">
+    <Phone>480-219-5320</Phone>
+    <Address Country="USA" NearestAirport="PHX">
       <Number>2102</Number>
       <Street>E Rio Salado Pkwy</Street>
       <City>Tempe</City>
@@ -92,8 +109,8 @@
 
   <Hotel>
     <Name>Hampton Inn &amp; Suites Tempe</Name>
-    <Phone>+1-480-410-6400</Phone>
-    <Address Country="USA" NearestAirport="PHX">
+    <Phone>480-410-6400</Phone>
+    <Address Country="USA">
       <Number>1415</Number>
       <Street>N Scottsdale Rd</Street>
       <City>Tempe</City>
@@ -103,9 +120,9 @@
     <Rating>4.2</Rating>
   </Hotel>
 
-  <Hotel Rating="3.9">
+  <Hotel>
     <Name>Residence Inn Tempe</Name>
-    <Phone>+1-480-967-2300</Phone>
+    <Phone>480-967-2300</Phone>
     <Address Country="USA">
       <Number>510</Number>
       <Street>S Forest Ave</Street>
@@ -117,7 +134,8 @@
 
   <Hotel>
     <Name>Hyatt House Tempe</Name>
-    <Phone>+1-480-207-1578</Phone>
+    <Phone>480-207-1578</Phone>
+    <Phone>877-215-5234</Phone>
     <Address Country="USA" NearestAirport="PHX">
       <Number>601</Number>
       <Street>E 6th St</Street>
@@ -128,16 +146,16 @@
     <Rating>4.1</Rating>
   </Hotel>
 
-  <Hotel Rating="4.6">
+  <Hotel>
     <Name>Canopy by Hilton Tempe</Name>
-    <Phone>+1-480-490-2000</Phone>
+    <Phone>480-490-2000</Phone>
     <Address Country="USA">
       <Number>108</Number>
       <Street>E University Dr</Street>
       <City>Tempe</City>
       <State>AZ</State>
       <Zip>85281</Zip>
-      <NearestAirport>PHX</NearestAirport>
     </Address>
+    <Rating>4.6</Rating>
   </Hotel>
 </Hotels>
